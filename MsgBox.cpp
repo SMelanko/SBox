@@ -54,7 +54,7 @@ void MsgBox::Init(const QString& title, const QString& msg, const QString& lbl)
 	QVBoxLayout* layout(new QVBoxLayout);
 	layout->setAlignment(Qt::AlignTop);
 	m_close->setCursor(Qt::PointingHandCursor);
-	m_close->setIcon(QPixmap(":/res/img/msg_box_close.png"));
+	m_close->setIcon(QPixmap(":/msg_box_close.png"));
 	layout->addWidget(m_close);
 	mainLayout->addLayout(layout);
 

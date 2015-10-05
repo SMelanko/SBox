@@ -26,42 +26,42 @@ public:
 		QDialog* parent = Q_NULLPTR);
 	//! Destructor.
 	virtual ~MsgBox();
-	//! Shows error box with animation effect.
+	//! Shows message box with animation effect.
 	void Show();
 
 	//
 	// Class's signals.
 	//
 Q_SIGNALS:
-	//! Emits close signal into wizard, where deletes error box.
+	//! Signal is emitted when the widget has been closed.
 	void Close();
 
 	//
 	// Protected methods.
 	//
 protected:
-	//! Receives mouse press events for the widget.
+	//! Receives mouse press events.
 	void mousePressEvent(QMouseEvent* event) Q_DECL_OVERRIDE;
 
 	//
 	// Private methods.
 	//
 private:
-	//! Initializes widget's content.
+	//! Initializes the widget's content.
 	void Init(const QString& title, const QString& msg, const QString& lbl);
 
 	//
 	// Private slots.
 	//
 private Q_SLOTS:
-	//! Closes error box.
+	//! Closes message box.
 	void OnClose();
 
 	//
 	// Private data members.
 	//
 private:
-	//! Property for attenuation error box.
+	//! Property for attenuation message box.
 	QPropertyAnimation* m_anim;
 	//! Close button.
 	QPushButton* m_close;

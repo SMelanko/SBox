@@ -68,8 +68,8 @@ void SBox::OnShowMsgBox()
 
 void SBox::OnShow(const QString& title, const QString& msg)
 {
-	m_mb = new InfoBox(title, msg, QSize(360, 75), this);
 	QRect pos(geometry());
+	m_mb = new ErrorBox(title, msg, QSize(pos.width(), 75), this);
 	m_mb->move(pos.x(), pos.y());
 	m_mb->Show();
 

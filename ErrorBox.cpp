@@ -5,7 +5,7 @@ ErrorBox::ErrorBox(
 	const QString& msg,
 	const QSize& sz,
 	QDialog* parent)
-	: MsgBox(title, msg, ":/res/img/error_box_lbl.png", "#E55353", sz, parent)
+	: MsgBox(title, msg, ":/err_lbl.png", "#E55353", sz, parent)
 {
 }
 

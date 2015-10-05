@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file alias="msg_box_close.png">res/img/msg_box_close.png</file>
+        <file alias="info_lbl.png">res/img/info_box_lbl.png</file>
+        <file alias="err_lbl.png">res/img/error_box_lbl.png</file>
+    </qresource>
+</RCC>

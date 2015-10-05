@@ -16,7 +16,7 @@ class SBox : public QDialog
 	//
 public:
 	//! Default constructor.
-	SBox(QWidget *parent = 0);
+	SBox(QWidget* parent = Q_NULLPTR);
 	//! Destructor.
 	~SBox();
 
@@ -40,7 +40,7 @@ protected:
 	// Private methods.
 	//
 private:
-	//! Initializes dialog content.
+	//! Initializes dialog's content.
 	void Init();
 
 	//
